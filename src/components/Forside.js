@@ -1,7 +1,7 @@
 // Imports
-import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button, makeStyles, List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button, makeStyles,Paper, List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
-
+import st from './forside.css';
 /* Styling */
 const useStyles = makeStyles({
 	root: {
@@ -15,14 +15,29 @@ const useStyles = makeStyles({
 
 // Function export Forside()
 export default function Forside() {
-
 	const classes = useStyles();
 
 	return (
 		<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
 
-			Forside!
+			<div style= {st.div}>
+			<Paper elevation={3} style={{ padding: "0.8rem", width: "30rem", textAlign: "center", margin: "10px" }}>
+				<h2 style={{ marginTop: "5px" }}>
+					KOM I SIKKERHED NU 
+				</h2>
 
+				<h3>
+				Dine filer er i fare medmindre du handler med det samme! <br /><br />
+				Der er hackere ude på at stjæle dine oplysninger lige nu! <br /><br />
+				De kan tage dine filer som gidsel indtil du betaler en hæftig sum for at få dem tilbage.
+
+					
+				</h3>
+				<Button variant="contained"> Kom i sikkerhed nu  </Button>
+			</Paper>
+			
+			</div>
 		</div>
 	);
+
 }
