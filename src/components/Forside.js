@@ -22,18 +22,16 @@ export default function Forside() {
 
 			<div style= {st.div}>
 			<Paper elevation={3} style={{ padding: "0.8rem", width: "30rem", textAlign: "center", margin: "10px" }}>
-				<h2 style={{ marginTop: "5px" }}>
-					KOM I SIKKERHED NU 
+				<h2 style={{ marginTop: "5px", fontWeight: 900 }}>
+					KOM I SIKKERHED NU!
 				</h2>
 
-				<h3>
-				Dine filer er i fare medmindre du handler med det samme! <br /><br />
-				Der er hackere ude på at stjæle dine oplysninger lige nu! <br /><br />
-				De kan tage dine filer som gidsel indtil du betaler en hæftig sum for at få dem tilbage.
-
-					
-				</h3>
-				<Button variant="contained"> Kom i sikkerhed nu  </Button>
+				<p>
+					Dine filer er i fare medmindre du handler med det samme! <br /><br />
+					Der er hackere ude på at stjæle dine oplysninger lige nu! <br /><br />
+					De kan tage dine filer som gidsel indtil du betaler en hæftig sum for at få dem tilbage.
+				</p>
+				<Button variant="contained">Kom i sikkerhed!</Button>
 			</Paper>
 			
 			</div>
