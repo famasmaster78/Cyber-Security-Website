@@ -69,7 +69,7 @@ export default function BlivSikker() {
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
-					<Button size="small" color="primary" variant="contained" style={{ flexGrow: 1, fontWeight: "bold" }}>
+					<Button size="small" color="secondary" variant="contained" style={{ flexGrow: 1, fontWeight: "bold" }}>
 						Bliv ekstra sikker!
 					</Button>
 				</CardActions>
@@ -117,7 +117,7 @@ export default function BlivSikker() {
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
-					<Button size="small" color="primary" variant="contained" style={{ flexGrow: 1, fontWeight: "bold" }}>
+					<Button size="small" color="secondary" variant="contained" style={{ flexGrow: 1, fontWeight: "bold" }}>
 						Bliv sikker!
 					</Button>
 				</CardActions>
