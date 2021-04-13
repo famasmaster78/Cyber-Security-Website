@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 const accordionContent = [
 	{
 		"Title": "Hvad er space security?",
-		"Body": "<p>Space security handler om at holde sig sikker når vi udvider vores horisont til rummet.</p><p>Der vil komme nye farer som du skal være opmærksomme på og have metoder til at bestkytte dig mod.</p><p>Vi vil forsøge at give dig de bedste tips til dette på denne hjemmeside.</p>"
+		"Body": "Space security handler om at holde sig sikker når vi udvider vores horisont til rummet. \n Der vil komme nye farer som du skal være opmærksomme på og have metoder til at bestkytte dig mod.</p><p>Vi vil forsøge at give dig de bedste tips til dette på denne hjemmeside.</p>"
 	},
 	{
 		"Title": "Kinetic physical",
