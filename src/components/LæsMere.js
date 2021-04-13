@@ -15,6 +15,18 @@ const useStyles = makeStyles({
 	},
   });
 
+// Array til de data som skal vises i højre side.
+const accordionContent = [
+	{
+		"Title": "Hvad er space security?",
+		"Body": "<p>Space security handler om at holde sig sikker når vi udvider vores horisont til rummet.</p><p>Der vil komme nye farer som du skal være opmærksomme på og have metoder til at bestkytte dig mod.</p><p>Vi vil forsøge at give dig de bedste tips til dette på denne hjemmeside.</p>"
+	},
+	{
+		"Title": "Kinetic physical",
+		"Body": "Det er noget vigtigt!"
+	}
+]
+
 // Function export Forside()
 export default function LæsMere() {
 
@@ -37,117 +49,43 @@ export default function LæsMere() {
 
 					<br /><br />
 
-					For at holde sig sikker skal man gerne kunne skelne mellem hvad er rigtigt og hvad er bare et forsøg på at tage røven på dig. 
+					For at holde sig sikker skal man gerne kunne skelne mellem hvad er rigtigt og hvad er bare et forsøg på at tage røven på dig.
 
 					<br /><br />
 
 					Det handler om at være kildekrisk, ligesom når man læser nyhederne. Kan vi stole på hvad vi ser eller læser?
 				</p>
 			</Paper>
-			
+
 			<Paper elevation={3} style={{ padding: "0.8rem", width: "30rem", textAlign: "center", margin: "10px" }}>
 				<h2 style={{ marginTop: "5px" }}>
 					FAQ
 				</h2>
 
-				<Accordion style={{ marginTop: "10px" }}>
-					<AccordionSummary
-						expandIcon={<ExpandMoreIcon />}
-						aria-controls="panel1a-content"
-						id="panel1a-header"
-					>
-						<Typography>Hvad er space security?</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Det er noget meget vigtigt du ikke må glemme... men jeg kan ikke huske det lige nu.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
-				<Accordion style={{ marginTop: "10px" }}>
-					<AccordionSummary
-						expandIcon={<ExpandMoreIcon />}
-						aria-controls="panel1a-content"
-						id="panel1a-header"
-					>
-						<Typography>Hvad er space security?</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Det er noget meget vigtigt du ikke må glemme... men jeg kan ikke huske det lige nu.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
-				<Accordion style={{ marginTop: "10px" }}>
-					<AccordionSummary
-						expandIcon={<ExpandMoreIcon />}
-						aria-controls="panel1a-content"
-						id="panel1a-header"
-					>
-						<Typography>Hvad er space security?</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Det er noget meget vigtigt du ikke må glemme... men jeg kan ikke huske det lige nu.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
-				<Accordion style={{ marginTop: "10px" }}>
-					<AccordionSummary
-						expandIcon={<ExpandMoreIcon />}
-						aria-controls="panel1a-content"
-						id="panel1a-header"
-					>
-						<Typography>Hvad er space security?</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Det er noget meget vigtigt du ikke må glemme... men jeg kan ikke huske det lige nu.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
-				<Accordion style={{ marginTop: "10px" }}>
-					<AccordionSummary
-						expandIcon={<ExpandMoreIcon />}
-						aria-controls="panel1a-content"
-						id="panel1a-header"
-					>
-						<Typography>Hvad er space security?</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Det er noget meget vigtigt du ikke må glemme... men jeg kan ikke huske det lige nu.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
-				<Accordion style={{ marginTop: "10px" }}>
-					<AccordionSummary
-						expandIcon={<ExpandMoreIcon />}
-						aria-controls="panel1a-content"
-						id="panel1a-header"
-					>
-						<Typography>Hvad er space security?</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Det er noget meget vigtigt du ikke må glemme... men jeg kan ikke huske det lige nu.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
-				<Accordion style={{ marginTop: "10px" }}>
-					<AccordionSummary
-						expandIcon={<ExpandMoreIcon />}
-						aria-controls="panel1a-content"
-						id="panel1a-header"
-					>
-						<Typography>Hvad er space security?</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Det er noget meget vigtigt du ikke må glemme... men jeg kan ikke huske det lige nu.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
+				{accordionContent.map((content) => {
+
+					console.log("Content", content);
+
+					return(
+						<Accordion style={{ marginTop: "10px" }}>
+							<AccordionSummary
+								expandIcon={<ExpandMoreIcon />}
+								aria-controls="panel1a-content"
+								id="panel1a-header"
+							>
+								<Typography><b>{content.Title}</b></Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography style={{ textAlign: "left" }}>
+									{content.Body}
+								</Typography>
+							</AccordionDetails>
+						</Accordion>
+					)
+
+				})}
+
+
 			</Paper>
 
 		</div>
