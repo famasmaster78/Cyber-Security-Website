@@ -23,7 +23,7 @@ export default function Forside() {
 			<div style={{ display: "inline-flex", justifyContent: "center",verticalAlign: "middle"  }}>
 
 				<div style= {st.div}>
-				<Paper elevation={3} style={{ padding: "0.8rem", width: "45rem",height:"38rem", textAlign: "center", margin: "10px" }}>
+				<Paper elevation={3} style={{ padding: "0.8rem", width: "45rem",height:"38rem", textAlign: "center", margin: "10px",backgroundColor: "grey"  }}>
 					<h1 style={{ marginTop: "5px", fontWeight: 900 }}>
 						KOM I SIKKERHED NU!
 					</h1>
@@ -34,7 +34,7 @@ export default function Forside() {
 						De kan tage dine filer som gidsel indtil du betaler en hæftig sum for at få dem tilbage.
 					</p>
 					
-					<Link to="bliv-sikker"><Button variant="contained">Kom i sikkerhed!	</Button></Link>
+					<Link to="bliv-sikker"><Button variant="contained" style={{backgroundColor: "#F149DA", color:"white"}}>Kom i sikkerhed!	</Button></Link>
 				
 					
 				</Paper>
@@ -45,7 +45,7 @@ export default function Forside() {
 			<div style={{ display: "inline-flex", justifyContent: "center", verticalAlign: "middle" }}>
 
 				<div style= {st.div}>
-				<Paper elevation={3} style={{ padding: "0.8rem", width: "45rem",height:"38rem", textAlign: "center", margin: "10px" }}>
+				<Paper elevation={3} style={{ padding: "0.8rem", width: "45rem",height:"38rem", textAlign: "center", margin: "10px", backgroundColor: "grey" }}>
 					<h1 style={{ marginTop: "5px", fontWeight: 900 }}>
 						HVAD STÅR PÅ SPIL?
 					</h1>
@@ -56,7 +56,7 @@ export default function Forside() {
 						Din computer kon være inficeret med virus og kan holde øje med alt hvad du gør! 
 					</p>
 					<Link to="/læs-mere">
-					<Button variant="contained">Læs mere</Button>
+					<Button variant="contained" style={{backgroundColor: "#F149DA"}}>Læs mere</Button>
 					</Link>
 				</Paper>
 				
