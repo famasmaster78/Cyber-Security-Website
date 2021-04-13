@@ -22,7 +22,7 @@ export default function Forside() {
 		<div  style={{display:"flex", flexFlow:"row", justifyContent:"center"}}>
 			<div style={{ display: "inline-flex", justifyContent: "center",verticalAlign: "middle"  }}>
 
-				<Paper elevation={3} style={{ padding: "0.8rem", width: "90%", height:"38rem", textAlign: "center", margin: "10px",backgroundColor: "grey"  }}>
+				<Paper elevation={3} style={{ padding: "0.8rem", width: "90%", height:"38rem", textAlign: "center", margin: "10px", backgroundColor: "#c4c4c4"  }}>
 					<h1 style={{ marginTop: "5px", fontWeight: 900 }}>
 						KOM I SIKKERHED NU!
 					</h1>
@@ -44,7 +44,7 @@ export default function Forside() {
 
 			<div style={{ display: "inline-flex", justifyContent: "center", verticalAlign: "middle" }}>
 
-				<Paper elevation={3} style={{ padding: "0.8rem", width: "90%",height:"38rem", textAlign: "center", margin: "10px", backgroundColor: "grey" }}>
+				<Paper elevation={3} style={{ padding: "0.8rem", width: "90%",height:"38rem", textAlign: "center", margin: "10px", backgroundColor: "#c4c4c4" }}>
 					<h1 style={{ marginTop: "5px", fontWeight: 900 }}>
 						HVAD STÅR PÅ SPIL?
 					</h1>
