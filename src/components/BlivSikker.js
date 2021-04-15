@@ -65,6 +65,7 @@ export default function BlivSikker() {
 								<ListItemText primary="Cute alien sticker" />
 							</ListItem>
 						</List>
+						<span style={{ textAlign: "center", display: "block", fontSize: "18px" }}>Kun 899kr<span style={{ fontSize: "9px" }}>/md</span></span>
 					</Typography>
 					</CardContent>
 				</CardActionArea>
@@ -113,6 +114,7 @@ export default function BlivSikker() {
 								<ListItemText primary="Staten holder backup af dine data" />
 							</ListItem>
 						</List>
+						<span style={{ textAlign: "center", display: "block" }}>Kun 599kr<span style={{ fontSize: "9px" }}>/md</span></span>
 					</Typography>
 					</CardContent>
 				</CardActionArea>

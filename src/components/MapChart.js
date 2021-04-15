@@ -20,7 +20,7 @@ const markers = [
 const MapChart = () => {
   return (
     <ComposableMap
-        style={{ margin: "10px", borderRadius: "10px" }}
+        style={{ margin: "10px", borderRadius: "10px", height: "300px" }}
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
             rotate: [-11.0, -55.5, 0],
