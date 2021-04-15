@@ -1,4 +1,5 @@
 // Imports
+import React from 'react';
 import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button, makeStyles, List, ListItem, ListItemIcon, ListItemText, Paper, AccordionDetails, AccordionSummary, Accordion } from "@material-ui/core";
 import { CenterFocusStrong } from "@material-ui/icons";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
@@ -19,35 +20,43 @@ const useStyles = makeStyles({
 const accordionContent = [
 	{
 		"Title": "Hvad er space security?",
-		"Body": "Space security handler om at holde sig sikker når vi udvider vores horisont til rummet. \n\n Der vil komme nye farer som du skal være opmærksomme på og have metoder til at bestkytte dig mod. \n\n Vi vil forsøge at give dig de bedste tips til dette på denne hjemmeside."
+		"Body": "Space security handler om at holde sig sikker når vi udvider vores horisont til rummet. \n\n Der vil komme nye farer som du skal være opmærksomme på og have metoder til at bestkytte dig mod. \n\n Vi vil forsøge at give dig de bedste tips til dette på denne hjemmeside.",
+		"id": 1
 	},
 	{
 		"Title": "Kinetic physical",
-		"Body": "Direct strikes against space infrastructure and assets. \n\n Dette kunne være en anden satellite man med vilje støder ind i en anden. Eller det kan være en Anti Satellite Systems (ASATs)."
+		"Body": "Direct strikes against space infrastructure and assets. \n\n Dette kunne være en anden satellite man med vilje støder ind i en anden. Eller det kan være en Anti Satellite Systems (ASATs).",
+		"id" : 2
 	},
 	{
 		"Title": "Non-kinetic physical",
-		"Body": "Gør skade til Space Assets på lang afstand. Eks: elektromagnetisk pulser (EMP)"
+		"Body": "Gør skade til Space Assets på lang afstand. Eks: elektromagnetisk pulser (EMP)",
+		"id" : 3
 	},
 	{
 		"Title": "Electronic",
-		"Body": "Damage transmission and reception of data (jamming). Eller udsendelse af falske data (Spoofing)"
+		"Body": "Damage transmission and reception of data (jamming). Eller udsendelse af falske data (Spoofing)",
+		"id" : 4
 	},
 	{
 		"Title": "Cyber",
-		"Body": "Direct injection af falske data. Uautoriseret monitoring af trafik eller aktiviteter."
+		"Body": "Direct injection af falske data. Uautoriseret monitoring af trafik eller aktiviteter.",
+		"id" : 5
 	},
 	{
 		"Title": "Earth-based",
-		"Body": "Skade til fysisk udstyr på jorden. Ødelægger supply chain. Ødelæggelse af udstyr til afsendelse / modtagelse af data eller ødelæggelse af storage af disse data."
+		"Body": "Skade til fysisk udstyr på jorden. Ødelægger supply chain. Ødelæggelse af udstyr til afsendelse / modtagelse af data eller ødelæggelse af storage af disse data.",
+		"id" : 6
 	},
 	{
 		"Title": "Logisk Sikkerhed",
-		"Body": "Også kaldet programmeret sikkerhed. Passwords / Kodeord osv."
+		"Body": "Også kaldet programmeret sikkerhed. Passwords / Kodeord osv.",
+		"id" : 7
 	},
 	{
 		"Title": "Fortrolighed, Integritet & Tilgængelighed",
-		"Body": "Fortrolighed. \n Kun personer der er autoriseret kan se og læse dette indhold. Eks: kun bankrådgiveren og brugeren har adgang til banko-konto. \n\n Integritet. \n Kun personder og systemer, der er autoriseret til at læse eller ændre denne information har adgang. Eks: bank saldo er som den skal være, den er ikke blevet pillet ved. \n\n Tilgængelighed. \n Alle personer som har adgang til disse informationer har også muligheden for at tilgå disse informationer. Eks: Kunden har mulighed for at tilgå hendes konto når hun har brug for det."
+		"Body": "Fortrolighed. \n Kun personer der er autoriseret kan se og læse dette indhold. Eks: kun bankrådgiveren og brugeren har adgang til banko-konto. \n\n Integritet. \n Kun personder og systemer, der er autoriseret til at læse eller ændre denne information har adgang. Eks: bank saldo er som den skal være, den er ikke blevet pillet ved. \n\n Tilgængelighed. \n Alle personer som har adgang til disse informationer har også muligheden for at tilgå disse informationer. Eks: Kunden har mulighed for at tilgå hendes konto når hun har brug for det.",
+		"id" : 8
 	}
 ]
 
@@ -55,7 +64,8 @@ const accordionContent = [
 export default function LæsMere() {
 
 	const classes = useStyles();
-
+	const [expanded, setExpanded] =React.useState(false)
+	const handleChange =(panel)=> (event,isExpanded)=>{setExpanded(isExpanded ? panel : false );};
 	return (
 		<div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center", flexWrap: "wrap" }}>
 
@@ -85,13 +95,11 @@ export default function LæsMere() {
 				<h2 style={{ marginTop: "5px" }}>
 					FAQ
 				</h2>
-
 				{accordionContent.map((content) => {
 
 					console.log("Content", content);
-
 					return(
-						<Accordion style={{ marginTop: "10px" }}>
+						<Accordion expanded={expanded === content.id} onChange={handleChange(content.id)} style={{ marginTop: "10px" }}>
 							<AccordionSummary
 								expandIcon={<ExpandMoreIcon />}
 								aria-controls="panel1a-content"
