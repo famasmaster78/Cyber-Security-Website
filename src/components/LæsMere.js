@@ -64,7 +64,7 @@ const accordionContent = [
 export default function LæsMere() {
 
 	const classes = useStyles();
-	const [expanded, setExpanded] =React.useState(false)
+	const [expanded, setExpanded] =React.useState(false);
 	const handleChange =(panel)=> (event,isExpanded)=>{setExpanded(isExpanded ? panel : false );};
 	return (
 		<div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center", flexWrap: "wrap" }}>

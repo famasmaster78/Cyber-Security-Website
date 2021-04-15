@@ -44,7 +44,7 @@ export default function BlivSikker() {
 								<ListItemIcon>
 									<FiberManualRecordIcon style={{ fontSize: "small" }} />
 								</ListItemIcon>
-								<ListItemText primary="Beskyttelse mod extreme aliens" />
+								<ListItemText primary="Beskyttelse mod extreme terroist hackere" />
 							</ListItem>
 							<ListItem>
 								<ListItemIcon>
@@ -99,7 +99,7 @@ export default function BlivSikker() {
 								<ListItemIcon>
 									<FiberManualRecordIcon style={{ fontSize: "small" }} />
 								</ListItemIcon>
-								<ListItemText primary="Beskyttelse mod aliens" />
+								<ListItemText primary="Beskyttelse mod hackere, op til at de er 12 år" />
 							</ListItem>
 							<ListItem>
 								<ListItemIcon>
