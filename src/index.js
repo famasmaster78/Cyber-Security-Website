@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar";
 import BlivSikker from "./components/BlivSikker";
 import LæsMere from "./components/LæsMere";
 import Kontakt from "./components/Kontakt";
+import Kurv from "./components/Kurv"
 
 // Importer theme
 import theme from "./components/theme";
@@ -26,16 +27,19 @@ ReactDOM.render(
         <Navbar />
         <Route exact path="/">
           <Forside />
-      </Route>
-      <Route exact path="/bliv-sikker">
-          <BlivSikker />
-      </Route>
-      <Route exact path="/kontakt">
-          <Kontakt />
-      </Route>
-      <Route exact path="/læs-mere">
-          <LæsMere />
-      </Route>
+		</Route>
+		<Route exact path="/bliv-sikker">
+			<BlivSikker />
+		</Route>
+		<Route exact path="/kontakt">
+			<Kontakt />
+		</Route>
+		<Route exact path="/læs-mere">
+			<LæsMere />
+		</Route>
+		<Route exact path="/kurv">
+			<Kurv />
+		</Route>
       </BrowserRouter>
   </ThemeProvider>,
   document.getElementById('root')

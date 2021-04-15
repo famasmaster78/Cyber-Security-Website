@@ -21,7 +21,7 @@ export default function BlivSikker() {
 	return (
 		<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
 
-			<Card className={classes.root} style={{ transform: "scale(1.1)" }}>
+			<Card className={classes.root} style={{ transform: "scale(1.1)" }}  onClick={() => window.location.href = "/kontakt"}>
 				<CardActionArea>
 					<CardMedia
 					className={classes.media}
@@ -70,13 +70,13 @@ export default function BlivSikker() {
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
-					<Button size="small" color="secondary" variant="contained" style={{ flexGrow: 1, fontWeight: "bold" }}>
+					<Button onClick={() => window.location.href = "/kontakt"} size="small" color="secondary" variant="contained" style={{ flexGrow: 1, fontWeight: "bold" }}>
 						Bliv ekstra sikker!
 					</Button>
 				</CardActions>
 			</Card>
 
-			<Card className={classes.root}>
+			<Card className={classes.root} onClick={() => window.location.href = "/kontakt"}>
 				<CardActionArea>
 					<CardMedia
 					className={classes.media}
@@ -119,7 +119,7 @@ export default function BlivSikker() {
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
-					<Button size="small" color="secondary" variant="contained" style={{ flexGrow: 1, fontWeight: "bold" }}>
+					<Button onClick={() => window.location.href = "/kontakt"} size="small" color="secondary" variant="contained" style={{ flexGrow: 1, fontWeight: "bold" }}>
 						Bliv sikker!
 					</Button>
 				</CardActions>
