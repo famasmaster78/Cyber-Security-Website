@@ -65,7 +65,7 @@ export default function LæsMere() {
 
 	const classes = useStyles();
 	const [expanded, setExpanded] =React.useState(false)
-	const handleChange =(panel)=> (event,isExpanded)=>{setExpanded(isExpanded ? panel : false );};
+	const handleChange = (panel) => (event,isExpanded) => {setExpanded(isExpanded ? panel : false );};
 	return (
 		<div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center", flexWrap: "wrap" }}>
 
@@ -97,7 +97,7 @@ export default function LæsMere() {
 				</h2>
 				{accordionContent.map((content) => {
 
-					console.log("Content", content);
+					// console.log("Content", content);
 					return(
 						<Accordion expanded={expanded === content.id} onChange={handleChange(content.id)} style={{ marginTop: "10px" }}>
 							<AccordionSummary
