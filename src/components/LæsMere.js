@@ -20,17 +20,17 @@ const useStyles = makeStyles({
 const accordionContent = [
 	{
 		"Title": "Hvad er space security?",
-		"Body": "Space security handler om at holde sig sikker når vi udvider vores horisont til rummet. \n\n Der vil komme nye farer som du skal være opmærksomme på og have metoder til at bestkytte dig mod. \n\n Vi vil forsøge at give dig de bedste tips til dette på denne hjemmeside.",
+		"Body": "Space security handler om at holde sig sikker når vi udvider vores  digitale horisont til rummet.\n\n Der vil komme nye farer som du skal være opmærksomme på og have metoder til at bestkytte dig mod. \n\n Vi vil forsøge at forklarer de mulige farer bedst muligt. Der er 5 sikkerhedstrulser i rummet, og du kan læse mere om hver enkelt nedenunder.",
 		"id": 1
 	},
 	{
 		"Title": "Kinetic physical",
-		"Body": "Direct strikes against space infrastructure and assets. \n\n Dette kunne være en anden satellite man med vilje støder ind i en anden. Eller det kan være en Anti Satellite Systems (ASATs).",
+		"Body": "Direct strikes against space infrastructure and assets. \n\n Dette kunne være en anden satellite man med vilje støder ind i en anden. Eller det kan være en Anti Satellite Systems (ASATs).\n\n Det kan også være en meteor der rammer satelitten. Generalt alt der fysisk kan ramme og beskadige den",
 		"id" : 2
 	},
 	{
 		"Title": "Non-kinetic physical",
-		"Body": "Gør skade til Space Assets på lang afstand. Eks: elektromagnetisk pulser (EMP)",
+		"Body": "Gør skade til Space Assets på lang afstand. Eks: elektromagnetisk pulser (EMP), en skarp laser mod sensorer eller anden fysisk skade som ikke er pga. ballistik skade",
 		"id" : 3
 	},
 	{
@@ -54,9 +54,14 @@ const accordionContent = [
 		"id" : 7
 	},
 	{
+		"Title": "Fyskisk Sikkerhed",
+		"Body": "Det er alt sådan noget som døre, hegn, vagter, lås med nøle og andre fysiske ting, som holder det sikkert",
+		"id" : 8
+	},
+	{
 		"Title": "Fortrolighed, Integritet & Tilgængelighed",
 		"Body": "Fortrolighed. \n Kun personer der er autoriseret kan se og læse dette indhold. Eks: kun bankrådgiveren og brugeren har adgang til banko-konto. \n\n Integritet. \n Kun personder og systemer, der er autoriseret til at læse eller ændre denne information har adgang. Eks: bank saldo er som den skal være, den er ikke blevet pillet ved. \n\n Tilgængelighed. \n Alle personer som har adgang til disse informationer har også muligheden for at tilgå disse informationer. Eks: Kunden har mulighed for at tilgå hendes konto når hun har brug for det.",
-		"id" : 8
+		"id" : 9
 	}
 ]
 
