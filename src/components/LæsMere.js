@@ -4,6 +4,8 @@ import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, 
 import { CenterFocusStrong } from "@material-ui/icons";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import HelpIcon from '@material-ui/icons/Help';
+import LockIcon from '@material-ui/icons/Lock';
 
 /* Styling */
 const useStyles = makeStyles({
@@ -80,7 +82,7 @@ export default function LæsMere() {
 
 			<Paper elevation={3} style={{ padding: "0.8rem", width: "30rem", textAlign: "center", margin: "10px" }}>
 				<h2 style={{ marginTop: "5px" }}>
-					IT Sikkerhed
+					IT Sikkerhed <LockIcon style={{ verticalAlign: "text-top" }} />
 				</h2>
 
 				<p>
@@ -98,7 +100,7 @@ export default function LæsMere() {
 
 			<Paper elevation={3} style={{ padding: "0.8rem", width: "30rem", textAlign: "center", margin: "10px" }}>
 				<h2 style={{ marginTop: "5px" }}>
-					FAQ
+					FAQ <HelpIcon style={{ verticalAlign: "text-top" }} />
 				</h2>
 				{accordionContent.map((content) => {
 
