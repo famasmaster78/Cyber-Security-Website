@@ -44,19 +44,19 @@ export default function BlivSikker() {
 								<ListItemIcon>
 									<FiberManualRecordIcon style={{ fontSize: "small" }} />
 								</ListItemIcon>
-								<ListItemText primary="Beskyttelse mod extreme terroist hackere" />
+								<ListItemText primary="100% Fortrolighed!" />
 							</ListItem>
 							<ListItem>
 								<ListItemIcon>
 									<FiberManualRecordIcon style={{ fontSize: "small" }} />
 								</ListItemIcon>
-								<ListItemText primary="Beskyttelse mod 6 space threats" />
+								<ListItemText primary="Beskyttelse mod ALLE space threats" />
 							</ListItem>
 							<ListItem>
 								<ListItemIcon>
 									<FiberManualRecordIcon style={{ fontSize: "small" }} />
 								</ListItemIcon>
-								<ListItemText primary="Staten holder sikker backup af dine data" />
+								<ListItemText primary="Staten holder sikker backup af dine data med Fysisk og Logisk sikkerhed." />
 							</ListItem>
 							<ListItem>
 								<ListItemIcon>
@@ -99,7 +99,7 @@ export default function BlivSikker() {
 								<ListItemIcon>
 									<FiberManualRecordIcon style={{ fontSize: "small" }} />
 								</ListItemIcon>
-								<ListItemText primary="Beskyttelse mod hackere, op til at de er 12 år" />
+								<ListItemText primary="99% Fortrolighed & 54% Tilgænglighed" />
 							</ListItem>
 							<ListItem>
 								<ListItemIcon>
@@ -111,7 +111,7 @@ export default function BlivSikker() {
 								<ListItemIcon>
 									<FiberManualRecordIcon style={{ fontSize: "small" }} />
 								</ListItemIcon>
-								<ListItemText primary="Staten holder backup af dine data" />
+								<ListItemText primary="Staten holder backup af dine data med Fysisk sikkerhed" />
 							</ListItem>
 						</List>
 						<span style={{ textAlign: "center", display: "block" }}>Kun 599kr<span style={{ fontSize: "9px" }}>/md</span></span>
