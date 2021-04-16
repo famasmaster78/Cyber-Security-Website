@@ -25,7 +25,7 @@ const accordionContent = [
 	},
 	{
 		"Title": "Kinetic physical",
-		"Body": "Direct strikes against space infrastructure and assets. \n\n Dette kunne være en anden satellite man med vilje støder ind i en anden. Eller det kan være en Anti Satellite Systems (ASATs).\n\n Det kan også være en meteor der rammer satelitten. Generalt alt der fysisk kan ramme og beskadige den",
+		"Body": "Direct strikes against space infrastruktur og aktiver. \n\n Dette kunne være en anden satellite man med vilje støder ind i en anden. Eller det kan være en Anti Satellite Systems (ASATs).\n\n Det kan også være en meteor der rammer satelitten. Generalt alt der fysisk kan ramme og beskadige den",
 		"id" : 2
 	},
 	{
@@ -35,7 +35,7 @@ const accordionContent = [
 	},
 	{
 		"Title": "Electronic",
-		"Body": "Damage transmission and reception of data (jamming). Eller udsendelse af falske data (Spoofing)",
+		"Body": "Ødelæggelse af udstyr brugt til udsendelse eller modtagelse af data. (Også kaldet data jamming). Eller udsendelse af falske data (Data Spoofing)",
 		"id" : 4
 	},
 	{
@@ -45,17 +45,17 @@ const accordionContent = [
 	},
 	{
 		"Title": "Earth-based",
-		"Body": "Skade til fysisk udstyr på jorden. Ødelægger supply chain. Ødelæggelse af udstyr til afsendelse / modtagelse af data eller ødelæggelse af storage af disse data.",
+		"Body": "Skade til fysisk udstyr på jorden. Ødelæggelse af forsyningskæde. Ødelæggelse af udstyr til afsendelse / modtagelse af data eller ødelæggelse af lagring af disse data.",
 		"id" : 6
 	},
 	{
 		"Title": "Logisk Sikkerhed",
-		"Body": "Også kaldet programmeret sikkerhed. Passwords / Kodeord osv.",
+		"Body": "Også kaldet programmeret sikkerhed. Passwords / Kodeord osv. Her er intet fysisk i vejen for at få adgang, men udstyret du forsøger at få adgang til at låst af med adgangskode eller lign.",
 		"id" : 7
 	},
 	{
 		"Title": "Fyskisk Sikkerhed",
-		"Body": "Det er alt sådan noget som døre, hegn, vagter, lås med nøle og andre fysiske ting, som holder det sikkert",
+		"Body": "Det er alt sådan noget som døre, hegn, vagter, lås med nøgle og andre fysiske ting. Dvs. der er en fysisk forhindring som skal overkommes for at få adgang. Kobles også tit med logisk sikkerhed hvor man f.eks. skal indtaste en 4-cifret kode for at oplåse en dør, her bruges logisk sikkerhed til at styre fysisk sikkerhed.",
 		"id" : 8
 	},
 	{
