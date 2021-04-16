@@ -40,7 +40,7 @@ const accordionContent = [
 	},
 	{
 		"Title": "Cyber",
-		"Body": "Direct injection af falske data. Uautoriseret monitoring af trafik eller aktiviteter.",
+		"Body": "Direkte indsendelse af falske data af falske data. Uautoriseret monitoring af trafik eller aktiviteter.",
 		"id" : 5
 	},
 	{
