@@ -11,6 +11,9 @@ export default function Navbar() {
   return (
       <AppBar position="relative" style={{ width: "99%", left: "50%", transform: "translateX(-50%)", borderRadius: "10px", margin: "10px 0px 10px 0px" }}>
         <Toolbar>
+			<IconButton edge="start" color="inherit" aria-label="menu">
+				<MenuIcon />
+			</IconButton>
           <Link to="/bliv-sikker">
               <Button color="inherit" style={{ fontWeight: 600, textDecoration: "none", color: "white" }}>
                   Kom i sikkerhed!

@@ -7,6 +7,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HelpIcon from '@material-ui/icons/Help';
 import LockIcon from '@material-ui/icons/Lock';
 
+// CSS
+import "./App.css";
+
 /* Styling */
 const useStyles = makeStyles({
 	root: {
@@ -80,7 +83,7 @@ export default function LæsMere() {
 				Hvad står på spil?
 			</h1>
 
-			<Paper elevation={3} style={{ padding: "0.8rem", width: "30rem", textAlign: "center", margin: "10px" }}>
+			<Paper elevation={3} style={{ padding: "0.8rem", width: "30rem", textAlign: "center", margin: "10px", position: "relative", display: "inline-block" }}>
 				<h2 style={{ marginTop: "5px" }}>
 					IT Sikkerhed <LockIcon style={{ verticalAlign: "text-top" }} />
 				</h2>
@@ -96,6 +99,8 @@ export default function LæsMere() {
 
 					Det handler om at være kildekrisk, ligesom når man læser nyhederne. Kan vi stole på hvad vi ser eller læser?
 				</p>
+
+				<img className="spaceIMG" src="/Space-for-desktop.jpg" />
 			</Paper>
 
 			<Paper elevation={3} style={{ padding: "0.8rem", width: "30rem", textAlign: "center", margin: "10px" }}>
