@@ -19,7 +19,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+	"docker-full": "yarn docker-build && yarn docker-tag && yarn docker-push",
+    "docker-build": "docker build -t famasmaster78/ajsecurity .",
+    "docker-tag": "docker tag famasmaster78/ajsecurity docker.jbgaard.xyz/ajsecurity",
+    "docker-push": "docker push docker.jbgaard.xyz/ajsecurity",
+	"serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
